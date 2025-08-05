@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Workshop Registration</title>
-</head>
-<body>
-
-  <!-- TODO: Add a <header> with the page title "Tech Workshop 2025" and a small welcome subtitle -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workshop Registration</title>
+  </head>
+  <body>
+    <!-- TODO: Add a <header> with the page title "Tech Workshop 2025" and a small welcome subtitle -->
     <header>
       <h1>Tech Workshop 2025</h1>
       <h2>welcome to our Tech event</h2>
-       <!-- TODO: Add a <nav> with links to Home, About, and Contact pages -->
-        <nav>
-          <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-           </ul>
-        </nav>
+      <!-- TODO: Add a <nav> with links to Home, About, and Contact pages -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
- 
-
-  <!-- TODO: Begin the <main> section -->
+    <!-- TODO: Begin the <main> section -->
     <main>
-           <!-- TODO: Add a <section> introducing the event with an <article> that includes a short paragraph and maybe a quote -->
-            <section></section>
+      <!-- TODO: Add a <section> introducing the event with an <article> that includes a short paragraph and maybe a quote -->
+      <section>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            nam, officia libero cumque eveniet quia esse quibusdam quisquam.
+            Beatae natus delectus perferendis earum corporis, ratione aut
+            dolorem vel ipsam consequuntur.
+          </p>
+        </article>
+      </section>
+      <!-- TODO: Add another <section> with the actual <form> for registration -->
+      <section>
+        <!-- TODO: Group related inputs using <fieldset> and <legend> -->
+        <fieldset>
+          <legend>Registration</legend>
+          <!-- TODO: Use a <form> tag with method="post" and action="#" -->
+          <form action="#" method="post">
+            <!-- TODO: Add input for Full Name (text) -->
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" /> <br /><br />
+            <label for="email">Email:</label>
+            <!-- TODO: Add input for Email (type="email") -->
+            <input type="email" name="email" id="email" /><br /><br />
+            <!-- TODO: Add input for Mobile Number (type="tel") -->
+            <label for="phone">Phone No:</label>
+            <input type="tel" name="phone" id="phone" /><br /><br />
+            <!-- TODO: Add input for Age (type="number") -->
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" /><br /><br />
+            <!-- TODO: Add a dropdown (select) for choosing your T-Shirt size (S, M, L, XL) -->
+            <label for="t-size">Choose your T-Shirt size :</label>
+            <select name="t-size" id="t-size">
+              <option value="">select</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option></select
+            ><br /><br />
+            <!-- TODO: Add radio buttons for Gender (Male / Female / Other) -->
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" id="gender" />Female
+            <input type="radio" name="gender" id="gender" />Male
+            <input type="radio" name="gender" id="gender" />Other <br /><br />
+            <!-- TODO: Add checkboxes for Sessions Interested In (AI, Web Dev, Cybersecurity) -->
+            <label for="intrst">Please choose your Interested field:</label>
+            <input type="checkbox" name="intrst" id="intrst" />AI
+            <input type="checkbox" name="intrst" id="intrst" />Web Dev
+            <input type="checkbox" name="intrst" id="intrst" />Cybersecurity
+            <input type="checkbox" name="intrst" id="intrst" />Digital marketing
+
+            <br /><br />
+            <!-- TODO: Add a text area for writing a brief bio or motivation for joining -->
+            <label for="boi">Write motivation for joining :</label> <br />
+            <textarea name="boi" id="boi" cols="50" rows="4"></textarea
+            ><br /><br />
+
+            <!-- TODO: Add a range input for rating your tech knowledge (0 to 10) -->
+            <label for="rate">Rate your tech knowledge :</label>
+            0 <input type="range" name="rate" id="rate" />10 <br /><br />
+            <!-- TODO: Add a submit button -->
+
+            <button type="submit">Submit</button> <br /><br />
+            <!-- TODO: End the form section -->
+          </form>
+        </fieldset>
+      </section>
+      <!-- TODO: Add an <aside> for any notes or announcements (e.g., "Limited seats available!", "Bring your laptop.") -->
+      <aside>
+        <p>
+          <strong>Note:</strong> Limited seats available! Register early to
+          secure your spot.
+        </p>
+        <p>
+          <strong>Reminder:</strong> Bring your laptop for hands-on activities.
+        </p>
+      </aside>
+
+      <!-- TODO: End the <main> section -->
     </main>
 
-   
-
-    <!-- TODO: Add another <section> with the actual <form> for registration -->
-
-      <!-- TODO: Use a <form> tag with method="post" and action="#" -->
-
-        <!-- TODO: Group related inputs using <fieldset> and <legend> -->
-
-        <!-- TODO: Add input for Full Name (text) -->
-        
-        <!-- TODO: Add input for Email (type="email") -->
-
-        <!-- TODO: Add input for Mobile Number (type="tel") -->
-
-        <!-- TODO: Add input for Age (type="number") -->
-
-        <!-- TODO: Add a dropdown (select) for choosing your T-Shirt size (S, M, L, XL) -->
-
-        <!-- TODO: Add radio buttons for Gender (Male / Female / Other) -->
-
-        <!-- TODO: Add checkboxes for Sessions Interested In (AI, Web Dev, Cybersecurity) -->
-
-        <!-- TODO: Add a text area for writing a brief bio or motivation for joining -->
-
-        <!-- TODO: Add a range input for rating your tech knowledge (0 to 10) -->
-
-        <!-- TODO: Add a submit button -->
-
-    <!-- TODO: End the form section -->
-
-    <!-- TODO: Add an <aside> for any notes or announcements (e.g., "Limited seats available!", "Bring your laptop.") -->
-
-  <!-- TODO: End the <main> section -->
-
-  <!-- TODO: Add a <footer> with organizer name, contact info, and copyright -->
-
-</body>
+    <!-- TODO: Add a <footer> with organizer name, contact info, and copyright -->
+    <footer>
+      <p>Organized by <strong>TechCon Events</strong></p>
+      <p>
+        Contact:
+        <a href="mailto:info@techconevents.com">info@techconevents.com</a>
+      </p>
+      <p>&copy; 2025 TechCon Events. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
